@@ -1,0 +1,95 @@
+*{
+  box-sizing: border-box;
+}
+audio{
+  width:100px;
+  height:100px;
+}
+body{
+  background-image: url("../image-blue1.jpg");
+  background-size: cover;
+}
+h1{
+  color:blue;
+}
+.themes{
+  text-align:center;
+}
+li{
+  font-size: 25px;
+  display:inline-block;
+  list-style-type: none;
+  margin-right: 20px;
+  cursor: pointer;
+}
+li:nth-child(1){
+  color:blue;
+}
+li:nth-child(2){
+  color:green;
+}
+li:nth-child(3){
+  color:purple;
+}
+
+.game-block{
+  margin-top: 5px;
+  padding-top: 2px;
+  position:relative;
+  cursor: pointer;
+  transition:all 2s;
+  transform-style:preserve-3d;
+}
+.front{
+  font-size: 455%;
+  font-weight: bold;
+  text-align: center;
+  color:#fff;
+  background-color: grey;
+  position:absolute;
+  top:0;
+  bottom: 0;
+  width:100%;
+  height:100%;
+  z-index: 2;
+
+}
+
+img{
+  width:250px;
+  height:250px;
+}
+
+
+
+
+
+
+
+
+
+
+#mem-play {
+  max-width: 600px;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+.mem-card {
+  background: #f7f7f7;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+}
+.mem-card.open {
+  background: #fea;
+}
+.mem-card.ok {
+  background: #cfffc2;
+}
+
+/* [DOES NOT MATTER] */
+html, body {
+  font-family: arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
